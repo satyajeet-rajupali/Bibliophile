@@ -9,7 +9,10 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="32dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/sbg2">
+
+
 
     <EditText
         android:id="@+id/edt_txt_search"
