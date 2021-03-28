@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDescrption">
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp"
+        android:text="Book Title"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/bookcover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/book_title"/>
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookcover"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Satya Jeet, Raj Upali"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="italic" />
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authors">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#000"
+                android:text="@string/article_text"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
