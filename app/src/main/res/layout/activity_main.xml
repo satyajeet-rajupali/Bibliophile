@@ -17,16 +17,24 @@
     <EditText
         android:id="@+id/edt_txt_search"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
+        android:paddingStart="32dp"
+        android:textAllCaps="false"
+        android:background="@drawable/search_edittext_api"
         android:hint="@string/input"
-        android:inputType="text"
-        android:autofillHints="@string/input" />
+        android:textSize="15sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text" />
 
 
     <Button
         android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:textAllCaps="false"
+        android:background="@drawable/search_button"
+        android:backgroundTint="@color/black"
         android:text="@string/search"
         android:textStyle="bold"
         android:layout_marginTop="12dp"/>
